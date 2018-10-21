@@ -25,21 +25,21 @@ brew cask install iterm2 textmate google-chrome spectacle slack gimp mactex virt
 
 ## Shell
 
-.. ZSH
+* ZSH
 ```bash
 brew install zsh zsh-syntax-highlighting
 ```
-.. Oh-My-ZSH
+* Oh-My-ZSH
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)
 ```
-.. Powerlevel9k + hack font
+* Powerlevel9k + hack font
 ```bash
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 brew tap caskroom/fonts
 brew cask install font-hack-nerd-font
 ```
-.. Material design theme: installation instructions availables [here](https://github.com/MartinSeeler/iterm2-material-design)
+* Material design theme: installation instructions availables [here](https://github.com/MartinSeeler/iterm2-material-design)
 ```bash
 wget https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/master/material-design-colors.itermcolors
 ```
@@ -66,16 +66,16 @@ brew install vim git
 
 ### Plugins
 
-.. Pathogen
+* Pathogen
 ```bash
 mkdir -p ~/.vim/autoload ~/.vim/bundle
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 ```
-.. Vim-Airline
+* Vim-Airline
 ```bash
 git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
 ```
-.. Vim-Airline themes
+* Vim-Airline themes
 ```bash
 git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 ```
@@ -83,11 +83,11 @@ git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-ai
 ## Python
 
 ### Install
-.. Python 3
+* Python 3
 ```bash
 brew install python
 ```
-.. Python 2.7
+* Python 2.7
 ```bash
 brew install python@2
 ```
