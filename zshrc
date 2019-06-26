@@ -170,4 +170,14 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-neofetch
+# neofetch
+
+xdot(){
+	dot -Tpng $1 > $1.png
+	open $1.png
+}
+
+# apply no execution permission on directory given as parameter
+noexec(){
+	find $1 -type f -exec chmod +a "group:everyone deny execute" {} \;
+}
