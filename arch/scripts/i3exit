@@ -1,0 +1,30 @@
+#!/bin/sh
+lock() {
+    i3lock -n -ti /home/icecr4ck/wallpapers/lockscreen3.png
+}
+
+case "$1" in
+    lock)
+        lock
+        ;;
+    logout)
+        i3-msg exit
+        ;;
+    suspend)
+	dbus-send --system --print-reply --dest=org.freedesktop.Hal /org/freedesktop/Hal/devices/computer org.freedesktop.Hal.Device.SystemPowerManagement.Suspend
+        ;;
+    hibernate)
+        lock && dbus-send --system --print-reply --dest="org.freedesktop.ConsoleKit" /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Hibernate
+        ;;
+    reboot)
+        /sbin/reboot
+        ;;
+    shutdown)
+        /sbin/poweroff
+        ;;
+    *)
+        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        exit 2
+esac
+
+exit 0

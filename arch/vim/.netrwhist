@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/icecr4ck/.config/termite'
+let g:netrw_dirhist_4='/home/icecr4ck/.config/dconf'
+let g:netrw_dirhist_3='/home/icecr4ck/.config/polybar'
+let g:netrw_dirhist_2='/home/icecr4ck/.config'
+let g:netrw_dirhist_1='/home/icecr4ck/.config/i3'
